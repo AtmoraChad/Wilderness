@@ -1,6 +1,7 @@
 package net.atomorachad.wilderness.block;
 
 import net.atomorachad.wilderness.WildernessFalls;
+import net.atomorachad.wilderness.block.blocktype.CreamPumpkinBlock;
 import net.atomorachad.wilderness.worldgen.feature.ModFeatures;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -11,6 +12,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
@@ -46,6 +48,16 @@ public class ModBlocks {
 
     public static final Block YELLOW_SHRUB = registerBlockWithoutItem("yellow_shrub",
             properties -> new BushBlock(properties.mapColor(MapColor.COLOR_YELLOW).replaceable().noCollision().instabreak().sound(SoundType.RED_SHRUB).ignitedByLava().pushReaction(PushReaction.POPPED)));
+
+
+    public static final Block CREAM_PUMPKIN = registerBlock("cream_pumpkin",
+            properties -> new CreamPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED)));
+
+    public static final Block CARVED_CREAM_PUMPKIN = registerBlock("carved_cream_pumpkin",
+            properties -> new CarvedPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED)));
+
+    public static final Block CREAM_JACK_O_LANTERN = registerBlock("cream_jack_o_lantern",
+            properties -> new CarvedPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).lightLevel(state -> 15).isValidSpawn(Blocks::always).pushReaction(PushReaction.POPPED)));
 
 
     public static ResourceKey<Block> getRK(Block block) {

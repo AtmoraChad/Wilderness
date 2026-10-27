@@ -14,5 +14,9 @@
   "block.wilderness.orange_shrub": "Orange Shrub",
 
   "item.wilderness.yellow_shrub": "Yellow Shrub",
-  "item.wilderness.orange_shrub": "Orange Shrub"
+  "item.wilderness.orange_shrub": "Orange Shrub",
+
+  "block.wilderness.cream_pumpkin": "Cream Pumpkin",
+  "block.wilderness.carved_cream_pumpkin": "Carved Cream Pumpkin",
+  "block.wilderness.cream_jack_o_lantern": "Cream Jack O' Lantern"
 }

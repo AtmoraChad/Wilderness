@@ -2,6 +2,9 @@
   "values": [
     "wilderness:red_moss_block",
     "wilderness:orange_moss_block",
-    "wilderness:yellow_moss_block"
+    "wilderness:yellow_moss_block",
+    "wilderness:cream_pumpkin",
+    "wilderness:carved_cream_pumpkin",
+    "wilderness:cream_jack_o_lantern"
   ]
 }

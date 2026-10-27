@@ -1,10 +1,12 @@
 package net.atomorachad.wilderness.datagen;
 
 import net.atomorachad.wilderness.block.ModBlocks;
+import net.atomorachad.wilderness.tag.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,6 +23,11 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModBlocks.getItemRK(ModBlocks.RED_MOSS))
                 .add(ModBlocks.getItemRK(ModBlocks.ORANGE_MOSS))
                 .add(ModBlocks.getItemRK(ModBlocks.YELLOW_MOSS))
+        ;
+
+        tag(ModTags.Items.PUMPKINS)
+                .add(ModBlocks.getItemRK(ModBlocks.CREAM_PUMPKIN))
+                .add(ModBlocks.getItemRK(Blocks.PUMPKIN))
         ;
     }
 }

@@ -36,6 +36,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.YELLOW_MOSS_CARPET))
         ;
 
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.getRK(ModBlocks.CREAM_PUMPKIN))
+                .add(ModBlocks.getRK(ModBlocks.CARVED_CREAM_PUMPKIN))
+                .add(ModBlocks.getRK(ModBlocks.CREAM_JACK_O_LANTERN))
+        ;
+
         addToTags(
                 ModBlocks.getRK(ModBlocks.RED_MOSS),
                 BlockTags.AZALEA_GROWS_ON,
@@ -221,6 +227,53 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 BlockTags.ENCHANTMENT_POWER_TRANSMITTER,
                 BlockTags.REPLACEABLE,
                 BlockTags.REPLACEABLE_BY_MUSHROOMS
+        );
+
+        addToTags(
+                ModBlocks.getRK(ModBlocks.CREAM_PUMPKIN),
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.SWORD_EFFICIENT,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.ENDERMAN_HOLDABLE,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.BLOCKS_MOTION
+        );
+
+        addToTags(
+                ModBlocks.getRK(ModBlocks.CARVED_CREAM_PUMPKIN),
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.SWORD_EFFICIENT,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.ENDERMAN_HOLDABLE,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.BLOCKS_MOTION
+        );
+
+        addToTags(
+                ModBlocks.getRK(ModBlocks.CREAM_JACK_O_LANTERN),
+                BlockTags.SWORD_EFFICIENT,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP,
+                BlockTags.ICE_MELTS_WHEN_DESTROYED_ABOVE,
+                BlockTags.BLOCKS_DOLPHIN_JUMP,
+                BlockTags.BLOCKS_MOTION_NO_LEAVES,
+                BlockTags.ENTITIES_CAN_TELEPORT_TO,
+                BlockTags.CAUSES_SUFFOCATION,
+                BlockTags.BLOCKS_FLUID_FLOW,
+                BlockTags.BLOCKS_MOTION,
+                BlockTags.BLOCKS_MOTION_IN_HEIGHTMAP_NO_LEAVES,
+                BlockTags.BLOCKS_LAVA_FIRE_SPREAD
         );
     }
 }

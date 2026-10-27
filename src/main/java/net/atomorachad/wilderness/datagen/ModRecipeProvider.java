@@ -1,6 +1,7 @@
 package net.atomorachad.wilderness.datagen;
 
 import net.atomorachad.wilderness.block.ModBlocks;
+import net.atomorachad.wilderness.tag.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.advancements.Advancement;
@@ -8,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
 
@@ -41,10 +43,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModBlocks.ORANGE_MOSS), has(ModBlocks.ORANGE_MOSS))
                         .save(output);
 
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_MOSS_CARPET, 3)
-                        .pattern("RR")
-                        .define('R', ModBlocks.YELLOW_MOSS)
-                        .unlockedBy(getHasName(ModBlocks.YELLOW_MOSS), has(ModBlocks.YELLOW_MOSS))
+                shaped(RecipeCategory.BUILDING_BLOCKS, Items.PUMPKIN_SEEDS, 4)
+                        .pattern("R")
+                        .define('R', ModBlocks.CREAM_PUMPKIN)
+                        .unlockedBy(getHasName(ModBlocks.CREAM_PUMPKIN), has(ModBlocks.CREAM_PUMPKIN))
+                        .save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CREAM_JACK_O_LANTERN, 1)
+                        .pattern("P")
+                        .pattern("T")
+                        .define('P', ModBlocks.CREAM_PUMPKIN)
+                        .define('T', Items.TORCH)
+                        .unlockedBy(getHasName(ModBlocks.CREAM_PUMPKIN), has(ModBlocks.CREAM_PUMPKIN))
                         .save(output);
             }
         };

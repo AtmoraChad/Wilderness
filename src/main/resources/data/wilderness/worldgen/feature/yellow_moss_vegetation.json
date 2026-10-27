@@ -5,7 +5,11 @@
     "entries": [
       {
         "data": "wilderness:yellow_shrub",
-        "weight": 7
+        "weight": 25
+      },
+      {
+        "data": "wilderness:cream_pumpkin",
+        "weight": 15
       },
       {
         "data": "wilderness:yellow_moss_carpet",

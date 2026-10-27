@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "wilderness:block/carved_cream_pumpkin",
+    "side": "wilderness:block/cream_pumpkin_side",
+    "top": "wilderness:block/cream_pumpkin_top"
+  }
+}

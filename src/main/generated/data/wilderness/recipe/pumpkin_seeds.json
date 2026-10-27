@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "R": "wilderness:yellow_moss_block"
+    "R": "wilderness:cream_pumpkin"
   },
   "pattern": [
-    "RR"
+    "R"
   ],
   "result": {
-    "count": 3,
-    "id": "wilderness:yellow_moss_carpet"
+    "count": 4,
+    "id": "minecraft:pumpkin_seeds"
   }
 }

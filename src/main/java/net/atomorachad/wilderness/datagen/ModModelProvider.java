@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {super(output);}
@@ -21,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockModelGenerators.createCrossBlock(ModBlocks.YELLOW_SHRUB, BlockModelGenerators.PlantType.NOT_TINTED);
         blockModelGenerators.createCrossBlock(ModBlocks.ORANGE_SHRUB, BlockModelGenerators.PlantType.NOT_TINTED);
+
     }
 
 
@@ -31,4 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.YELLOW_SHRUB, ModelTemplates.FLAT_ITEM);
 
     }
+
+
 }

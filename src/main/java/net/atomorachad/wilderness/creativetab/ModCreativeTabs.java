@@ -29,6 +29,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ORANGE_SHRUB);
                         output.accept(ModItems.YELLOW_SHRUB);
 
+                        output.accept(ModBlocks.CREAM_PUMPKIN);
+                        output.accept(ModBlocks.CARVED_CREAM_PUMPKIN);
+                        output.accept(ModBlocks.CREAM_JACK_O_LANTERN);
                     }).build());
 
     public static void registerModCreativeModeTabs() {

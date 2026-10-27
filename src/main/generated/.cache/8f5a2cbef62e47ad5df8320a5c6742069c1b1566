@@ -1,4 +1,7 @@
 // 26.3	-999999999-01-01T00:00:00	Wilderness Falls/Block Loot Tables
+46de487b57f5fd2b370dbe1a6a67106738667a4d data/wilderness/loot_table/blocks/carved_cream_pumpkin.json
+63e19dc506f88b446d490d9ac609f13f6ec6316b data/wilderness/loot_table/blocks/cream_jack_o_lantern.json
+433a5ab4233a6ca8bca55a9ecb02ebffbfc2f5f7 data/wilderness/loot_table/blocks/cream_pumpkin.json
 5dc48b36b6f28fb2dd00d9cf49614f2e062308e9 data/wilderness/loot_table/blocks/orange_moss_block.json
 91212edc441b370c8e297b77878265f84ad4e0b9 data/wilderness/loot_table/blocks/orange_moss_carpet.json
 11c7595e37e7d2f49106fe5ad0b03d4f9b55f86e data/wilderness/loot_table/blocks/red_moss_block.json
