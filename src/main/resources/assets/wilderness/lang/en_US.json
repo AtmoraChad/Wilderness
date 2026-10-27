@@ -1,0 +1,18 @@
+{
+  "creativemodetab.wilderness.wilderness_blocks": "Wilderness Blocks",
+
+  "block.wilderness.red_moss_block": "Red Moss Block",
+  "block.wilderness.red_moss_carpet": "Red Moss Carpet",
+
+  "block.wilderness.orange_moss_block": "Orange Moss Block",
+  "block.wilderness.orange_moss_carpet": "Orange Moss Block",
+
+  "block.wilderness.yellow_moss_block": "Yellow Moss Block",
+  "block.wilderness.yellow_moss_carpet": "Yellow Moss Block",
+
+  "block.wilderness.yellow_shrub": "Yellow Shrub",
+  "block.wilderness.orange_shrub": "Orange Shrub",
+
+  "item.wilderness.yellow_shrub": "Yellow Shrub",
+  "item.wilderness.orange_shrub": "Orange Shrub"
+}

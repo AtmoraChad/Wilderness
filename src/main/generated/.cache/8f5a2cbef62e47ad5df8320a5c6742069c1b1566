@@ -1,0 +1,7 @@
+// 26.3	-999999999-01-01T00:00:00	Wilderness Falls/Block Loot Tables
+5dc48b36b6f28fb2dd00d9cf49614f2e062308e9 data/wilderness/loot_table/blocks/orange_moss_block.json
+91212edc441b370c8e297b77878265f84ad4e0b9 data/wilderness/loot_table/blocks/orange_moss_carpet.json
+11c7595e37e7d2f49106fe5ad0b03d4f9b55f86e data/wilderness/loot_table/blocks/red_moss_block.json
+604debfe314b3370c9732a06ede26f0be413b087 data/wilderness/loot_table/blocks/red_moss_carpet.json
+48936dca46d7e678f89d4d8b1438466b4b2b29c7 data/wilderness/loot_table/blocks/yellow_moss_block.json
+41cdc849836273629b4e4f017a6f3353411b9009 data/wilderness/loot_table/blocks/yellow_moss_carpet.json
