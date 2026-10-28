@@ -31,18 +31,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             public void buildRecipes() {
 
 
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_MOSS_CARPET, 3)
-                        .pattern("RR")
-                        .define('R', ModBlocks.RED_MOSS)
-                        .unlockedBy(getHasName(ModBlocks.RED_MOSS), has(ModBlocks.RED_MOSS))
-                        .save(output);
-
-                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_MOSS_CARPET, 3)
-                        .pattern("RR")
-                        .define('R', ModBlocks.ORANGE_MOSS)
-                        .unlockedBy(getHasName(ModBlocks.ORANGE_MOSS), has(ModBlocks.ORANGE_MOSS))
-                        .save(output);
-
                 shaped(RecipeCategory.BUILDING_BLOCKS, Items.PUMPKIN_SEEDS, 4)
                         .pattern("R")
                         .define('R', ModBlocks.CREAM_PUMPKIN)

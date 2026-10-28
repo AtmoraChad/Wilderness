@@ -1,9 +1,5 @@
 // 26.3	-999999999-01-01T00:00:00	Wilderness Falls/Overworld Revisited Recipes
 d1340fdd8cdf31ccd943f97de9f28425081dd429 data/wilderness/advancement/recipes/building_blocks/cream_jack_o_lantern.json
-dd9d61e3a7d91ebc29c58f882b15c82ca4ee4a42 data/wilderness/advancement/recipes/building_blocks/orange_moss_carpet.json
 2806074bb115ead7b0001bead7420860f32fae39 data/wilderness/advancement/recipes/building_blocks/pumpkin_seeds.json
-0bc5b013171fa11787bfe08348cb56e99f5099fe data/wilderness/advancement/recipes/building_blocks/red_moss_carpet.json
 6b2e8085a16cea2e3f33687f0133de168b05ae43 data/wilderness/recipe/cream_jack_o_lantern.json
-7b1bdbb0768ce5e24f778bbfa9925dd6ee0f00e0 data/wilderness/recipe/orange_moss_carpet.json
 6a57ad2957656dbbb39a80a88bcc9aeb3fba6acc data/wilderness/recipe/pumpkin_seeds.json
-c8368944b0f72de5186270a4fe016adad19041b6 data/wilderness/recipe/red_moss_carpet.json

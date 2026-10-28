@@ -1,7 +1,6 @@
 package net.atomorachad.wilderness;
 
 import net.atomorachad.wilderness.block.ModBlocks;
-import net.atomorachad.wilderness.client.SubstrateTintSources;
 import net.atomorachad.wilderness.creativetab.ModCreativeTabs;
 import net.atomorachad.wilderness.item.ModItems;
 import net.atomorachad.wilderness.worldgen.feature.ModFeatures;
@@ -25,7 +24,6 @@ public class WildernessFalls implements ModInitializer {
 		ModItems.registerModItems();
 		ModCreativeTabs.registerModCreativeModeTabs();
 		ModFeatures.registerModFeatures();
-		SubstrateTintSources.register();
 	}
 
 	public static Identifier id(String path) {

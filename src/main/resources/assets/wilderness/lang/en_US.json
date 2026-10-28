@@ -1,15 +1,6 @@
 {
   "creativemodetab.wilderness.wilderness_blocks": "Wilderness Blocks",
 
-  "block.wilderness.red_moss_block": "Red Moss Block",
-  "block.wilderness.red_moss_carpet": "Red Moss Carpet",
-
-  "block.wilderness.orange_moss_block": "Orange Moss Block",
-  "block.wilderness.orange_moss_carpet": "Orange Moss Block",
-
-  "block.wilderness.yellow_moss_block": "Yellow Moss Block",
-  "block.wilderness.yellow_moss_carpet": "Yellow Moss Block",
-
   "block.wilderness.yellow_shrub": "Yellow Shrub",
   "block.wilderness.orange_shrub": "Orange Shrub",
 
@@ -18,5 +9,7 @@
 
   "block.wilderness.cream_pumpkin": "Cream Pumpkin",
   "block.wilderness.carved_cream_pumpkin": "Carved Cream Pumpkin",
-  "block.wilderness.cream_jack_o_lantern": "Cream Jack O' Lantern"
+  "block.wilderness.cream_jack_o_lantern": "Cream Jack O' Lantern",
+
+  "block.wilderness.dappled_grass_block": "Dappled Grass Block"
 }

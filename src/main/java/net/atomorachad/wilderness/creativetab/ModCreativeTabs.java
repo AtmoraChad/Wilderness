@@ -15,16 +15,11 @@ public class ModCreativeTabs {
 
     public static final CreativeModeTab OR_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, "wilderness_tab"),
-            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.RED_MOSS))
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.DAPPLED_GRASS))
                     .title(Component.translatable("creativemodetab.wilderness.wilderness_blocks"))
                     .displayItems((parameters, output) -> {
 
-                        output.accept(ModBlocks.RED_MOSS);
-                        output.accept(ModBlocks.RED_MOSS_CARPET);
-                        output.accept(ModBlocks.ORANGE_MOSS);
-                        output.accept(ModBlocks.ORANGE_MOSS_CARPET);
-                        output.accept(ModBlocks.YELLOW_MOSS);
-                        output.accept(ModBlocks.YELLOW_MOSS_CARPET);
+                        output.accept(ModBlocks.DAPPLED_GRASS);
 
                         output.accept(ModItems.ORANGE_SHRUB);
                         output.accept(ModItems.YELLOW_SHRUB);

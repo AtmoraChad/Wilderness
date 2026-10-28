@@ -19,11 +19,6 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.Provider registries) {
         
 
-        tag(ItemTags.MOSS_BLOCKS)
-                .add(ModBlocks.getItemRK(ModBlocks.RED_MOSS))
-                .add(ModBlocks.getItemRK(ModBlocks.ORANGE_MOSS))
-                .add(ModBlocks.getItemRK(ModBlocks.YELLOW_MOSS))
-        ;
 
         tag(ModTags.Items.PUMPKINS)
                 .add(ModBlocks.getItemRK(ModBlocks.CREAM_PUMPKIN))

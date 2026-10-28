@@ -2,7 +2,6 @@ package net.atomorachad.wilderness.block;
 
 import net.atomorachad.wilderness.WildernessFalls;
 import net.atomorachad.wilderness.block.blocktype.CreamPumpkinBlock;
-import net.atomorachad.wilderness.worldgen.feature.ModFeatures;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -21,27 +20,6 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static final Block RED_MOSS = registerBlock("red_moss_block",
-            properties -> new BonemealableFeaturePlacerBlock(ModFeatures.RED_MOSS_PATCH_BONEMEAL,
-            properties.mapColor(MapColor.COLOR_RED).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)));
-
-    public static final Block ORANGE_MOSS = registerBlock("orange_moss_block",
-            properties -> new BonemealableFeaturePlacerBlock(ModFeatures.ORANGE_MOSS_PATCH_BONEMEAL,
-                    properties.mapColor(MapColor.COLOR_ORANGE).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)));
-
-    public static final Block YELLOW_MOSS = registerBlock("yellow_moss_block",
-            properties -> new BonemealableFeaturePlacerBlock(ModFeatures.YELLOW_MOSS_PATCH_BONEMEAL,
-                    properties.mapColor(MapColor.COLOR_YELLOW).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)));
-
-    public static final Block RED_MOSS_CARPET = registerBlock("red_moss_carpet",
-            properties -> new CarpetBlock(properties.mapColor(MapColor.COLOR_RED).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)));
-
-    public static final Block ORANGE_MOSS_CARPET = registerBlock("orange_moss_carpet",
-            properties -> new CarpetBlock(properties.mapColor(MapColor.COLOR_ORANGE).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)));
-
-    public static final Block YELLOW_MOSS_CARPET = registerBlock("yellow_moss_carpet",
-            properties -> new CarpetBlock(properties.mapColor(MapColor.COLOR_YELLOW).strength(0.1F).sound(SoundType.MOSS).pushReaction(PushReaction.POPPED)));
-
 
     public static final Block ORANGE_SHRUB = registerBlockWithoutItem("orange_shrub",
             properties -> new BushBlock(properties.mapColor(MapColor.COLOR_ORANGE).replaceable().noCollision().instabreak().sound(SoundType.RED_SHRUB).ignitedByLava().pushReaction(PushReaction.POPPED)));
@@ -58,6 +36,10 @@ public class ModBlocks {
 
     public static final Block CREAM_JACK_O_LANTERN = registerBlock("cream_jack_o_lantern",
             properties -> new CarvedPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).lightLevel(state -> 15).isValidSpawn(Blocks::always).pushReaction(PushReaction.POPPED)));
+
+
+    public static final Block DAPPLED_GRASS = registerBlock("dappled_grass_block",
+            properties -> new GrassBlock(properties.mapColor(MapColor.COLOR_ORANGE).strength(0.6F).sound(SoundType.RED_SHRUB).randomTicks()));
 
 
     public static ResourceKey<Block> getRK(Block block) {
