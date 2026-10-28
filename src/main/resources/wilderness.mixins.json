@@ -3,7 +3,9 @@
   "package": "net.atomorachad.wilderness.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "ExampleMixin"
+    "ExampleMixin",
+    "StemBlockMixin"
+
   ],
   "injectors": {
     "defaultRequire": 1

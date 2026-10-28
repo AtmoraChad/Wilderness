@@ -39,7 +39,7 @@ public class ModBlocks {
 
 
     public static final Block DAPPLED_GRASS = registerBlock("dappled_grass_block",
-            properties -> new GrassBlock(properties.mapColor(MapColor.COLOR_ORANGE).strength(0.6F).sound(SoundType.RED_SHRUB).randomTicks()));
+            properties -> new GrassBlock(properties.mapColor(MapColor.COLOR_ORANGE).strength(0.6F).sound(SoundType.GRASS).randomTicks()));
 
 
     public static ResourceKey<Block> getRK(Block block) {

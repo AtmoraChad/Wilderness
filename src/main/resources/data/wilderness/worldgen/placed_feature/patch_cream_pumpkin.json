@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 125
+      "chance": 100
     },
     {
       "type": "minecraft:in_square"
@@ -52,6 +52,15 @@
           {
             "type": "minecraft:matching_blocks",
             "blocks": "minecraft:grass_block",
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "wilderness:dappled_grass_block",
             "offset": [
               0,
               -1,

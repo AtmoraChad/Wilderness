@@ -132,7 +132,7 @@
   "effects": {
     "dry_foliage_color": "#8c3a04",
     "foliage_color": "#e68e30",
-    "grass_color": "#df6827",
+    "grass_color": "#ff9400",
     "water_color": "#375154"
   },
   "features": [
@@ -183,8 +183,7 @@
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+      "minecraft:spring_water"
     ],
     [
       "minecraft:glow_lichen",

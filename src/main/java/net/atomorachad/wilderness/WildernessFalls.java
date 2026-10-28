@@ -1,8 +1,12 @@
 package net.atomorachad.wilderness;
 
+import com.terraformersmc.biolith.api.surface.SurfaceGeneration;
 import net.atomorachad.wilderness.block.ModBlocks;
+import net.atomorachad.wilderness.client.DappledGrassTint;
+import net.atomorachad.wilderness.client.SubstrateTintSources;
 import net.atomorachad.wilderness.creativetab.ModCreativeTabs;
 import net.atomorachad.wilderness.item.ModItems;
+import net.atomorachad.wilderness.worldgen.DappledForestMaterialRules;
 import net.atomorachad.wilderness.worldgen.feature.ModFeatures;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,6 +28,13 @@ public class WildernessFalls implements ModInitializer {
 		ModItems.registerModItems();
 		ModCreativeTabs.registerModCreativeModeTabs();
 		ModFeatures.registerModFeatures();
+		SubstrateTintSources.registerModBlockTint();
+		DappledGrassTint.registerDappledGrassTint();
+
+		SurfaceGeneration.addOverworldSurfaceRules(
+				Identifier.fromNamespaceAndPath("minecraft", "dappled_forest"),
+				DappledForestMaterialRules::dappledForest
+		);
 	}
 
 	public static Identifier id(String path) {
