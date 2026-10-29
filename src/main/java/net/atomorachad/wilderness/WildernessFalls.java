@@ -6,6 +6,7 @@ import net.atomorachad.wilderness.client.DappledGrassTint;
 import net.atomorachad.wilderness.client.SubstrateTintSources;
 import net.atomorachad.wilderness.creativetab.ModCreativeTabs;
 import net.atomorachad.wilderness.item.ModItems;
+import net.atomorachad.wilderness.variant.WildernessVariantRegistries;
 import net.atomorachad.wilderness.worldgen.DappledForestMaterialRules;
 import net.atomorachad.wilderness.worldgen.feature.ModFeatures;
 import net.fabricmc.api.ModInitializer;
@@ -30,6 +31,7 @@ public class WildernessFalls implements ModInitializer {
 		ModFeatures.registerModFeatures();
 		SubstrateTintSources.registerModBlockTint();
 		DappledGrassTint.registerDappledGrassTint();
+		WildernessVariantRegistries.initialize();
 
 		SurfaceGeneration.addOverworldSurfaceRules(
 				Identifier.fromNamespaceAndPath("minecraft", "dappled_forest"),

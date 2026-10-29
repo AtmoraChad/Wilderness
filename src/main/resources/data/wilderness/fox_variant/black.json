@@ -1,0 +1,19 @@
+{
+  "assets": {
+    "normal": "wilderness:entity/fox/black_fox",
+    "sleeping": "wilderness:entity/fox/black_fox_sleep"
+  },
+  "baby_assets": {
+    "normal": "wilderness:entity/fox/black_fox_baby",
+    "sleeping": "wilderness:entity/fox/black_fox_baby_sleep"
+  },
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "minecraft:dappled_forest"
+      },
+      "priority": 2
+    }
+  ]
+}

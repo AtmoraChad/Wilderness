@@ -49,6 +49,11 @@
               "weight": 4
             },
             {
+              "type": "minecraft:wolf",
+              "count": 4,
+              "weight": 8
+            },
+            {
               "type": "minecraft:fox",
               "count": {
                 "type": "minecraft:uniform",
@@ -138,8 +143,7 @@
   "features": [
     [],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
+      "minecraft:lake_lava_underground"
     ],
     [
       "minecraft:amethyst_geode"

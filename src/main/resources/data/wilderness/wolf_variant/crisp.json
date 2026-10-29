@@ -1,0 +1,21 @@
+{
+  "assets": {
+    "angry": "wilderness:entity/wolf/crisp_angry",
+    "tame": "wilderness:entity/wolf/crisp_tame",
+    "wild": "wilderness:entity/wolf/crisp"
+  },
+  "baby_assets": {
+    "angry": "wilderness:entity/wolf/crisp_angry_baby",
+    "tame": "wilderness:entity/wolf/crisp_tame_baby",
+    "wild": "wilderness:entity/wolf/crisp_baby"
+  },
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "minecraft:dappled_forest"
+      },
+      "priority": 2
+    }
+  ]
+}

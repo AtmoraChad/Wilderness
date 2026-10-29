@@ -4,13 +4,15 @@
   "compatibilityLevel": "JAVA_25",
   "mixins": [
     "ExampleMixin",
+    "FoxRendererMixin",
+    "FoxRenderStateMixin",
+    "FoxVariantMixin",
     "StemBlockMixin"
-
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
-	}
+  }
 }

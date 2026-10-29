@@ -23,6 +23,14 @@ public class DappledForestMaterialRules {
     private static final ResourceKey<NormalNoise> DAPPLED_FOREST_GRASS_NOISE = ResourceKey.create(
                     Registries.NOISE, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, "dappled_forest_grass"));
 
+    private static final ResourceKey<NormalNoise> SMALL_PATCH_NOISE = ResourceKey.create(
+                    Registries.NOISE, Identifier.withDefaultNamespace("small_patch"));
+
+    private static final MaterialCondition COARSE_DIRT_CONDITION = MaterialRules.noiseCondition2d(SMALL_PATCH_NOISE, 1.2D);
+
+    private static final MaterialRule COARSE_DIRT =
+            MaterialRules.state(Blocks.COARSE_DIRT.defaultBlockState());
+
     public static MaterialRule dappledForest(RegistryAccess registryAccess) {
         return MaterialRules.ifTrue(
                 MaterialRules.isBiome(
@@ -33,8 +41,11 @@ public class DappledForestMaterialRules {
                 MaterialRules.ifTrue(
                         SURFACE, MaterialRules.ifTrue(
                                 NOT_UNDERWATER, MaterialRules.sequence(
-                                MaterialRules.ifTrue(
-                                        MaterialRules.noiseCondition2d(
+
+                                        MaterialRules.ifTrue(
+                                                COARSE_DIRT_CONDITION, COARSE_DIRT),
+                                        MaterialRules.ifTrue(
+                                            MaterialRules.noiseCondition2d(
                                                 DAPPLED_FOREST_GRASS_NOISE, 0.05D),
                                         MaterialRules.state(Blocks.GRASS_BLOCK.defaultBlockState())),
 

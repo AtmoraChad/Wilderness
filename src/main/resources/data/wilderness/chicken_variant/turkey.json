@@ -1,0 +1,14 @@
+{
+  "asset_id": "wilderness:entity/chicken/turkey",
+  "baby_asset_id": "wilderness:entity/chicken/turkey_baby",
+  "model": "cold",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "minecraft:dappled_forest"
+      },
+      "priority": 2
+    }
+  ]
+}
