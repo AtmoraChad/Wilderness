@@ -26,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.ORANGE_SHRUB, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.YELLOW_SHRUB, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BROWN_BEAR_EGG, ModelTemplates.FLAT_ITEM);
 
     }
 

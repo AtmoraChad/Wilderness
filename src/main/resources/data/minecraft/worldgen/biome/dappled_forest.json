@@ -61,6 +61,15 @@
                 "min_inclusive": 2
               },
               "weight": 4
+            },
+            {
+              "type": "wilderness:brown_bear",
+              "count": {
+                "type": "minecraft:uniform",
+                "max_inclusive": 3,
+                "min_inclusive": 2
+              },
+              "weight": 7
             }
           ],
           "monster": [

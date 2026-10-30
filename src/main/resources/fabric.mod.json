@@ -18,6 +18,9 @@
 		"main": [
 			"net.atomorachad.wilderness.WildernessFalls"
 		],
+		"client": [
+			"net.atomorachad.wilderness.WildernessFallsClient"
+		],
 		"fabric-datagen": [
 			"net.atomorachad.wilderness.WildernessFallsDataGenerator"
 		]

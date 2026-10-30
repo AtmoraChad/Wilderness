@@ -1,6 +1,7 @@
 package net.atomorachad.wilderness.item;
 
 import net.atomorachad.wilderness.block.ModBlocks;
+import net.atomorachad.wilderness.entity.ModEntities;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -11,19 +12,18 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
 import net.atomorachad.wilderness.WildernessFalls;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 
 import java.util.function.Function;
 
 public class ModItems {
 
-    public static final Item ORANGE_SHRUB = registerItem("orange_shrub",
-            properties -> new BlockItem(ModBlocks.ORANGE_SHRUB,
-                    properties.useItemDescriptionPrefix()));
+    public static final Item ORANGE_SHRUB = registerItem("orange_shrub", properties -> new BlockItem(ModBlocks.ORANGE_SHRUB, properties.useItemDescriptionPrefix().compostable(ContextIntProviders.COMPOSTABLE_LOW)));
 
-    public static final Item YELLOW_SHRUB = registerItem("yellow_shrub",
-            properties -> new BlockItem(ModBlocks.YELLOW_SHRUB,
-                    properties.useItemDescriptionPrefix()));
+    public static final Item YELLOW_SHRUB = registerItem("yellow_shrub", properties -> new BlockItem(ModBlocks.YELLOW_SHRUB, properties.useItemDescriptionPrefix().compostable(ContextIntProviders.COMPOSTABLE_LOW)));
+
+    public static final Item BROWN_BEAR_EGG = registerSpawnEgg("brown_bear_spawn_egg", ModEntities.BROWN_BEAR);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, name),

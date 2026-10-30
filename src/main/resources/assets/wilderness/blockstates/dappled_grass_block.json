@@ -16,6 +16,10 @@
         "model": "wilderness:block/dappled_grass_block",
         "y": 270
       }
-    ]
+    ],
+    "snowy=true": {
+      "model": "wilderness:block/dappled_grass_block"
+    }
+
   }
 }

@@ -7,9 +7,13 @@
   "item.wilderness.yellow_shrub": "Yellow Shrub",
   "item.wilderness.orange_shrub": "Orange Shrub",
 
+  "item.wilderness.brown_bear_spawn_egg": "Brown Bear Spawn Egg",
+
   "block.wilderness.cream_pumpkin": "Cream Pumpkin",
   "block.wilderness.carved_cream_pumpkin": "Carved Cream Pumpkin",
   "block.wilderness.cream_jack_o_lantern": "Cream Jack O' Lantern",
 
-  "block.wilderness.dappled_grass_block": "Dappled Grass Block"
+  "block.wilderness.dappled_grass_block": "Dappled Grass Block",
+
+  "entity.wilderness.brown_bear": "Brown Bear"
 }
