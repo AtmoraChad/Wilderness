@@ -14,6 +14,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProvider;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 
 import java.util.function.Function;
@@ -28,11 +30,11 @@ public class ModBlocks {
             properties -> new BushBlock(properties.mapColor(MapColor.COLOR_YELLOW).replaceable().noCollision().instabreak().sound(SoundType.RED_SHRUB).ignitedByLava().pushReaction(PushReaction.POPPED)));
 
 
-    public static final Block CREAM_PUMPKIN = registerBlock("cream_pumpkin",
-            properties -> new CreamPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED)));
+    public static final Block CREAM_PUMPKIN = registerCompostableBlock("cream_pumpkin",
+            properties -> new CreamPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED)), ContextIntProviders.COMPOSTABLE_MEDIUM);
 
-    public static final Block CARVED_CREAM_PUMPKIN = registerBlock("carved_cream_pumpkin",
-            properties -> new CarvedPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED)));
+    public static final Block CARVED_CREAM_PUMPKIN = registerCompostableBlock("carved_cream_pumpkin",
+            properties -> new CarvedPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED)), ContextIntProviders.COMPOSTABLE_MEDIUM);
 
     public static final Block CREAM_JACK_O_LANTERN = registerBlock("cream_jack_o_lantern",
             properties -> new CarvedPumpkinBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.DIDGERIDOO).strength(1.0F).sound(SoundType.WOOD).lightLevel(state -> 15).isValidSpawn(Blocks::always).pushReaction(PushReaction.POPPED)));
@@ -70,5 +72,17 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         WildernessFalls.LOGGER.info("Registering Mod Blocks for " + WildernessFalls.MOD_ID);
+    }
+
+    private static Block registerCompostableBlock(String name, Function<BlockBehaviour.Properties, Block> function, ResourceKey<ContextIntProvider> layers) {
+        Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, name))));
+        registerCompostableBlockItem(name, toRegister, layers);
+        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, name), toRegister);
+    }
+
+    private static void registerCompostableBlockItem(String name, Block block, ResourceKey<ContextIntProvider> layers) {
+        Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, name),
+                new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix().compostable(layers)
+                        .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, name)))));
     }
 }

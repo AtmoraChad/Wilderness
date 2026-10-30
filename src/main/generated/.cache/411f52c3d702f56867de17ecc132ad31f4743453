@@ -1,9 +1,11 @@
 // 26.3	-999999999-01-01T00:00:00	Wilderness Falls/Model Definitions
 5fc9c89e45923f233b73e7492dbeb05009893364 assets/wilderness/blockstates/orange_shrub.json
 c22d7c2e9f946921edde7e5df79790237b93a180 assets/wilderness/blockstates/yellow_shrub.json
+7c80409cb6c97d24cd55133edb83081f9a9513b6 assets/wilderness/items/brown_bear_spawn_egg.json
 9ed4466a90592084fda84f1240c7cc422dcde1ee assets/wilderness/items/orange_shrub.json
 ee4ca78152e91573d2a9c70e92b42805044ec115 assets/wilderness/items/yellow_shrub.json
 a54d0c117850d2372805c473c11ea830d8055c09 assets/wilderness/models/block/orange_shrub.json
 9e3f30b1bda8052eaedc1e4a530f7ea0940cae0c assets/wilderness/models/block/yellow_shrub.json
+cbfb654a4746319034c7114b4abc8f9fa4c0626e assets/wilderness/models/item/brown_bear_spawn_egg.json
 b574798eebf0e12648ff32bd2c3508d595d3874e assets/wilderness/models/item/orange_shrub.json
 c561dec0ec8041d4fb33323877be1f3658c4fe9d assets/wilderness/models/item/yellow_shrub.json
