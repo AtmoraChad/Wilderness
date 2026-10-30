@@ -1,9 +1,18 @@
 # Wilderness Falls
 
-## Setup
+Wilderness Falls is a Minecraft mod focused on enhancing the natural world through additional wildlife, environmental features, and improvements to existing biomes.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Features
+
+- **Tweaked Dappled Forest:** Improvements to the Dappled Forest biome, including expanded generation and more vegetation.
+- **New Animal Variants:** Additional animal variants that give more diversity to the biome.
+
+## Requirements
+
+- Minecraft: 26.3
+- Mod loader: Fabric
+- Dependencies: Biolith
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+- CC0 1.0 Universal

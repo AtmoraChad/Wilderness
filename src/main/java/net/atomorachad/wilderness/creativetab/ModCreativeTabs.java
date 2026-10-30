@@ -29,6 +29,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.CREAM_JACK_O_LANTERN);
 
                         output.accept(ModItems.BROWN_BEAR_EGG);
+                        output.accept(ModItems.GRAY_EGG);
 
                     }).build());
 

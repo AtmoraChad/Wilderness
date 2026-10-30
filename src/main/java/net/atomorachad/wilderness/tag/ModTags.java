@@ -5,10 +5,21 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class ModTags {
-    public static class Items {
+
+    public static class Biomes {
+        public static final TagKey<Biome> SPAWNS_TURKEY = createTag("spawns_turkey");
+
+        private static TagKey<Biome> createTag(String name) {
+            return TagKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath(WildernessFalls.MOD_ID, name));
+        }
+    }
+
+
+        public static class Items {
         public static final TagKey<Item> PUMPKINS = createTag("pumpkins");
 
         private static TagKey<Item> createTag(String name) {
