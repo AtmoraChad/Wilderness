@@ -15,4 +15,4 @@ Wilderness Falls is a Minecraft mod focused on enhancing the natural world throu
 
 ## License
 
-- CC0 1.0 Universal
+- MIT
